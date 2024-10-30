@@ -1,0 +1,17 @@
+Kerberos is a network authentication protocol designed to provide secure authentication for users and services over a non-secure network.
+
+
+
+Tickets: Kerberos uses tickets to authenticate users. When a user logs in, they receive a ticket that can be used to access various services without resending their credentials.
+
+Key Distribution Center (KDC): Kerberos relies on a central authority known as the KDC, which consists of two parts:
+Authentication Server (AS): Verifies user credentials and issues a Ticket Granting Ticket (TGT).
+Ticket Granting Service (TGS): Issues service tickets based on the TGT for accessing specific services.
+
+
+
+Login: The user enters their credentials (username and password).
+Request TGT: The client requests a TGT from the AS.
+Receive TGT: The AS responds with a TGT, encrypted with the user's password.
+Request Service Ticket: The client uses the TGT to request a service ticket from the TGS.
+Access Service: The client presents the service ticket to the desired service for access.
