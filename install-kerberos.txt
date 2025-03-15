@@ -7,7 +7,6 @@ dnf install krb5-server krb5-workstation krb5-libs -y
 
 
 # Initialize the KDC Database
-
 systemctl start krb5kdc
 systemctl start kadmin
 
@@ -28,8 +27,10 @@ The -s flag creates the database in the default location /var/kerberos/krb5kdc/
 
 
 # Create Kerberos Principals
-
+kadmin.local -q "addprinc user1@EXAMPLE.COM"
 kadmin.local -q "list_principals"
+klist
+
 
 
 
