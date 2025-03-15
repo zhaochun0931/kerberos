@@ -28,6 +28,7 @@ The -s flag creates the database in the default location /var/kerberos/krb5kdc/
 
 # Create Kerberos Principals
 kadmin.local -q "addprinc user1@EXAMPLE.COM"
+kadmin.local -q "addprinc user2@EXAMPLE.COM"
 kadmin.local -q "list_principals"
 klist
 
