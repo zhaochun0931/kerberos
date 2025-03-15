@@ -2,7 +2,9 @@
 dnf update -y
 dnf install krb5-server krb5-workstation krb5-libs -y
 
-krb5-server krb5-libs krb5-workstation
+
+
+
 
 # install client
 dnf update -y
