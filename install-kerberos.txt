@@ -1,1 +1,10 @@
+# install server
+dnf update -y
+dnf install krb5-server krb5-workstation krb5-libs -y
+
+
+
+# install client
+dnf update -y
+dnf install krb5-workstation -y
 
